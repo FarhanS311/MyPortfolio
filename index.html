@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Shaikh</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Raleway:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="topnav">
+            <ul class="navlist">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+
+        <section class="about-section" id="about">
+            <div>
+                <img class="profilepic" src="./assets/profile.png" alt="">
+            </div>
+            <h1>Hi, I am Farhan</h1>
+            <h2>I am a Full-Stack Developer.</h2>
+        </section>
+        <section class="skills-section" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-flex">
+                <div class="skill-block">
+                    <h3>Front-end development</h3>
+                </div>
+                <div class="skill-block">
+                    <h3>Back-end development</h3>
+                </div>
+                <div class="skill-block">
+                    <h3>Java development</h3>
+                </div>
+            </div>
+        </section>
+        <section class="projects-section" id="projects">
+            <h1>Here's my work so far.</h1>
+            <div class="projects-flex">
+                <a href="" target="blank" class="projects-tile">
+                    <img src="./assets/project1.jpg" width="320px" alt="Project-1" class="projects-image">
+                    <div class="projects-title"> Project one</div>
+                </a>
+                <a href="" target="blank" class="projects-tile">
+                    <img src="./assets/project-2.png" width="320px" alt="Project-2" class="projects-image">
+                    <div class="projects-title"> Project two</div>
+                </a>
+                <a href="" target="blank" class="projects-tile">
+                    <img src="./assets/project3.jpg" width="320px" alt="Project-3" class="projects-image">
+                    <div class="projects-title"> Project three</div>
+                </a>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="coffee">
+                <h2>Let's make something good together</h2>
+                <h3>How do you take your coffee ?</h3>
+
+            </div>
+            <div class="contact-form">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfNsaZTerm0A2NZqjTepckhsj9DgMjJOy61d70vEd28MvAEmw/viewform?embedded=true"
+                    width="650" height="580" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">&copy; Farhan Shaikh 2021</div>
+        <div class="contact-links">
+            <!-- <a href="https://www.google.com" target="_blank" class="contact">Google</a> -->
+            <!-- <a href="https://www.facebook.com" target="_blank" class="contact">Facebook</a> -->
+            <a href="https://www.linkedin.com/farhan-shaikh-5865017a" target="_blank" class="contact">
+                <i class="uil icon uil-linkedin-alt"></i>
+            </a>
+            <a href="https://www.twitter.com/FarhanS311/" target="_blank" class="contact">
+                <i class="uil icon uil-twitter-alt"></i>
+            </a>
+            <a href="mailto:projectplanner20@gmail.com" class="contact">
+                <i class="uil icon uil-envelope-alt"></i>
+            </a>
+            <a href="tel:+91-969-903-4703" class="contact">
+                <i class="uil icon uil-outgoing-call"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('header');
+        window.onscroll = () => {
+            if (window.scrollY > 500 & window.scrollY < 1200) {
+                navbar.removeAttribute('class');
+                navbar.classList.add('nav-color-1');
+            }
+            else if (window.scrollY > 1200 & window.scrollY < 1600) {
+                navbar.removeAttribute('class');
+                navbar.classList.add('nav-color-2');
+            }
+            else if (window.scrollY > 1600) {
+                navbar.removeAttribute('class');
+                navbar.classList.add('nav-color-3');
+            }
+            else {
+                navbar.removeAttribute('class');
+            }
+        };
+    </script>
+</body>
+
+</html>
